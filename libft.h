@@ -1,0 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/13 17:47:55 by vcodrean          #+#    #+#             */
+/*   Updated: 2022/09/15 14:03:19 by vcodrean         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+
+int	ft_isalpha(int v);
+int	ft_isdigit(int v);
+int	t_isalnum(int v);
+int	ft_isascii(int v);
+int	ft_isascii(int v);
+
+#endif
