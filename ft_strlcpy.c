@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 12:49:06 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/16 13:41:07 by vcodrean         ###   ########.fr       */
+/*   Created: 2022/09/16 18:13:32 by vcodrean          #+#    #+#             */
+/*   Updated: 2022/09/16 20:35:05 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* test any char for an alphabetic char */
+/*size-bounded string copying and concatenation*/
 
-int	ft_isalpha(int v)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	if ((v >= 'A' && v <= 'Z') || (v >= 'a' && v <= 'z'))
-		return (1);
-	return (0);
+	size_t	i;
+	size_t	len;
+
+	len = ft_strlen(src);
+	if (dstsize < 1)
+		return (len);
+	i = 0;
+	while (src[i] != '\0' && i < (dstsize - 1))
+	{
+		dst[i] = src[i];
+		i++;
+	}
+		dst[i] = '\0';
+	return (len);
 }
-/*
- #include <ctype.h>
-  #include <stdio.h>
-int	main(void)
-{
-	char a ='1';
-	printf("%d\n", ft_isalpha(a));
-	printf("%d\n", isalpha(a));
-	return (0);
-}*/

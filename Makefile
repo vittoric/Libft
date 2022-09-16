@@ -6,7 +6,7 @@
 #    By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 14:59:00 by vcodrean          #+#    #+#              #
-#    Updated: 2022/09/15 13:41:27 by vcodrean         ###   ########.fr        #
+#    Updated: 2022/09/16 19:47:18 by vcodrean         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,34 +17,32 @@ CCFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
 
-MY_SOURCES = ft_isalpha.c\
-						ft_isdigit\
-						ft_isalnum\
-						ft_isascii\
-						ft_isprint\
-						ft_strlen\
-						ft_memset\
-						ft_bzero\
-						ft_memcpy\
-						ft_memmove\
-						ft_strlcpy\
-						ft_strlcat\
-						ft_toupper\
-						ft_tolower\
-						ft_strchr\
-						ft_strrchr\
-						ft_strncmp\
-						ft_memchr\
-						ft_memcmp\
-						ft_strnstr\
-						ft_atoi\
+MY_SOURCES =ft_isdigit.c\
+						ft_isalnum.c\
+						ft_isalpha.c\
+						ft_isascii.c\
+						ft_isprint.c\
+						ft_strlen.c\
+						ft_memset.c\
+						ft_bzero.c\
+						ft_memcpy.c\
+						ft_strlcpy.c\
 						
 
 
-MY_OBJECTS = $(MY_SOURCES:.c = .o)
+OBJS = $(MY_SOURCES:.c=.o)
+INCLUDE = libft.h
 
-clean : 
-		$(RM) $(MY_OBJECTS) 
+$(NAME) : $(OBJS) $(INCLUDE)
+	@ar crs $(NAME) $(OBJS)
 
-fclean: clean
-			$(RM) $(NAME) 
+all: $(NAME)
+
+%.o : %.c
+	@$(CC) $(CCFLAGS) -c -o $@ $<
+clean:
+	@rm -f $(OBJS)
+fclean:
+	@rm -f $(NAME)
+re: all clean
+.PHONY: all clean fclean re

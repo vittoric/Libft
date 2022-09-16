@@ -6,7 +6,7 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:33:34 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/16 12:25:17 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/16 13:44:25 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memset(void *ptr, int x, size_t n)
 	s = ptr;
 	while (i < n)
 	{
-		s[i] = (unsigned char)(x);
+		s[i] = (unsigned char)x;
 		i++;
 	}
 	return (ptr);
