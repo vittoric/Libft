@@ -6,7 +6,7 @@
 #    By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 14:59:00 by vcodrean          #+#    #+#              #
-#    Updated: 2022/09/16 19:47:18 by vcodrean         ###   ########.fr        #
+#    Updated: 2022/09/19 13:06:02 by vcodrean         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,9 @@ MY_SOURCES =ft_isdigit.c\
 						ft_bzero.c\
 						ft_memcpy.c\
 						ft_strlcpy.c\
+						ft_strlcat.c\
+						ft_toupper.c\
+						ft_tolower.c\
 						
 
 
