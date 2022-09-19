@@ -6,7 +6,7 @@
 #    By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 14:59:00 by vcodrean          #+#    #+#              #
-#    Updated: 2022/09/19 13:06:02 by vcodrean         ###   ########.fr        #
+#    Updated: 2022/09/19 19:39:52 by vcodrean         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,11 +26,17 @@ MY_SOURCES =ft_isdigit.c\
 						ft_memset.c\
 						ft_bzero.c\
 						ft_memcpy.c\
+						ft_memmove.c\
 						ft_strlcpy.c\
 						ft_strlcat.c\
 						ft_toupper.c\
 						ft_tolower.c\
-						
+						ft_strchr.c\
+						ft_strncmp.c\
+						ft_memchr.c\
+						ft_memcmp.c\
+						ft_strnstr.c\
+						ft_atoi.c\
 
 
 OBJS = $(MY_SOURCES:.c=.o)
