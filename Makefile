@@ -6,7 +6,7 @@
 #    By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 14:59:00 by vcodrean          #+#    #+#              #
-#    Updated: 2022/09/20 16:31:49 by vcodrean         ###   ########.fr        #
+#    Updated: 2022/09/21 13:33:04 by vcodrean         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,9 @@ MY_SOURCES =ft_isdigit.c\
 						ft_atoi.c\
 						ft_calloc.c\
 						ft_strdup.c\
-						ft_substr.c
+						ft_substr.c\
+						ft_strjoin.c\
+						ft_strtrim.c\
 
 
 OBJS = $(MY_SOURCES:.c=.o)
