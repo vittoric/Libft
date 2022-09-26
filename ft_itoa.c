@@ -6,23 +6,22 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:14:45 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/22 19:55:00 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/26 18:59:20 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-static int count_char(int num)
+static	int	count_char(int num)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (num != 0)
 	{
 		if (num < 0)
 		{
-			n = n *(-1);
+			num = num *(-1);
 			count++;
 		}
 		while (num != 0)
@@ -38,30 +37,28 @@ static int count_char(int num)
 
 char	*ft_itoa(int n)
 {
-	int	len;
-	char	*str;
+	int			len;
+	char		*str;
+	long int	nbr;
 
 	len = count_char(n);
-
-	str = (char *) malloc(sizeof(char) * (len + 1 }));
+	nbr = n;
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return(str);
-	if (num == 0)
+		return (0);
+	if (nbr < 0)
 	{
+		str[0] = '-';
+		nbr = -nbr;
+	}
+	if (nbr == 0)
 		str[0] = '0';
-		str[1] = '\0'
-		return (str);
-	}
-	while (n != 0)
+	str[len--] = '\0';
+	while (nbr)
 	{
-		n = n / 10;
-		count++;
+		str[len] = ((nbr % 10) + '0');
+		nbr /= 10;
+		len--;
 	}
-	return((char *)10);
-	
-}
-
-int main()
-{
-	ft_itoa(569369);
+	return (str);
 }
