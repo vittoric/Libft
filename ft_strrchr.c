@@ -6,7 +6,7 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:09:22 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/19 16:19:10 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/28 17:35:32 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,28 @@
 //Busca la ultima ocurrencia de c dentro de una cadena de texto
 //y devuelven un puntero al carácter localizado
 
+/*
+It returns a pointer to the last occurrence of the character c in the string s.
+ * 
+ * @param s The string to search
+ * @param c the character to search for
+ * 
+ * @return The address of the last occurrence of the character c in the string s.
+ */
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*str;
+	int		i;
+	char	a;
 
-	str = (char *)s + ft_strlen(s);
-	while (*str != c)
+	a = c;
+	i = ft_strlen(s);
+	if (a == 0)
+		return ((char *) &s[i]);
+	while (i >= 0)
 	{
-		if (str == s)
-		{
-			return (NULL);
-		}
-		str--;
+		if (s[i] == a)
+			return ((char *)&s[i]);
+		i--;
 	}
-	return (str);
+	return (0);
 }

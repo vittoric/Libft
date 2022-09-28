@@ -6,7 +6,7 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:47:55 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/26 19:30:48 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/28 17:38:25 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif

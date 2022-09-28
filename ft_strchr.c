@@ -6,7 +6,7 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:57:14 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/19 17:37:36 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/28 17:32:47 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,31 @@
 //Busca cierta letra dentro de una cadena de texto
 //y devuelven un puntero al carácter localizado
 
+/*
+ The function ft_strchr() locates the first occurrence of c 
+ (converted to a char) 
+ * in the string
+ * pointed to by s
+ * 
+ * @param s The string to search.
+ * @param c The character to search for.
+ * 
+ * @return A pointer to the first occurrence of the character c in the string s.
+ */
 char	*ft_strchr(const char *s, int c)
 {
-	char	*str;
+	char	a;
 
-	str = (char *)s;
-	while (*str != c)
+	a = c;
+	while (*s)
 	{
-		if (*str == '\0')
+		if (*s == a)
 		{
-			return (NULL);
+			return ((char *) s);
 		}
-		str++;
+		s++;
 	}
-	return (str);
+	if (a == '\0')
+		return ((char *) s);
+	return (0);
 }
