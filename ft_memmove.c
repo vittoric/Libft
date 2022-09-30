@@ -6,7 +6,7 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:38:52 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/19 19:47:24 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/09/30 15:30:38 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char	*ptr;
 	unsigned char	*ptr2;
 
+	if (src == NULL && dst == NULL)
+		return (NULL);
 	ptr = (unsigned char *)src;
 	ptr2 = (unsigned char *)dst;
 	if (ptr2 >= ptr)
