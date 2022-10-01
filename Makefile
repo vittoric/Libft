@@ -6,7 +6,7 @@
 #    By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 14:59:00 by vcodrean          #+#    #+#              #
-#    Updated: 2022/09/30 16:07:16 by vcodrean         ###   ########.fr        #
+#    Updated: 2022/10/01 09:50:05 by vcodrean         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,13 +50,13 @@ MY_SOURCES =ft_isdigit.c\
 						ft_strrchr.c\
 						ft_strmapi.c\
 						ft_striteri.c\
-						ft_split.c\
+						ft_split.c
 
 
 OBJS = $(MY_SOURCES:.c=.o)
 INCLUDE = libft.h
 
-$(NAME) : $(OBJS) $(INCLUDE)
+$(NAME) : $(OBJS)
 	@ar crs $(NAME) $(OBJS)
 
 all: $(NAME)
@@ -64,8 +64,8 @@ all: $(NAME)
 %.o : %.c
 	@$(CC) $(CCFLAGS) -c -o $@ $<
 clean:
-	@rm -f $(OBJS)
+	@$(RM) $(OBJS)
 fclean: clean
 	@rm -f $(NAME)
-re: all clean
+re: all fclean
 .PHONY: all clean fclean re

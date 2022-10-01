@@ -6,12 +6,19 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 19:24:06 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/19 19:36:47 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/10/01 10:02:49 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * It takes a string, and returns an integer
+ * 
+ * param char str This is the string that we are converting to an integer.
+ * 
+ * return the integer value of the string.
+ */
 int	ft_atoi(const char *str)
 {
 	int	res;

@@ -6,12 +6,19 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:14:45 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/26 18:59:20 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/10/01 10:08:49 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * The above function converts an integer to a string.
+ * 
+ * param int num the number to be converted to a string
+ * 
+ * return A string of the number.
+ */
 static	int	count_char(int num)
 {
 	int	count;

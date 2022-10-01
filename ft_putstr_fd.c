@@ -6,12 +6,20 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 18:50:47 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/22 11:52:40 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/10/01 10:14:48 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * Ft_putstr_fd() writes the string s to the file descriptor fd.
+ * 
+ * param char s The string to be printed.
+ * param int fd file descriptor
+ * 
+ * return the number of characters printed.
+ */
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

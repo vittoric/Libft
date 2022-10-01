@@ -6,26 +6,18 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:32:39 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/19 11:45:53 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/10/01 10:05:29 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*decimal-digit character test and any char for an alphabetic char*/
-
+/**
+ * Checks if the character is alphanumeric.
+ * 
+ * param int v The character to be checked.
+ */
 int	ft_isalnum(int v)
 {
 	return (ft_isalpha(v) || ft_isdigit(v));
 }
-
-/*
-#include <ctype.h>
-#include <stdio.h>
-int	main(void)
-{
-	int a ='1';
-	printf("%d\n", ft_isalnum(a));
-	printf("%d\n", isalnum(a));
-	return (0);
-}*/

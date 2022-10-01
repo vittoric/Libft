@@ -6,12 +6,20 @@
 /*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 11:58:32 by vcodrean          #+#    #+#             */
-/*   Updated: 2022/09/28 17:31:50 by vcodrean         ###   ########.fr       */
+/*   Updated: 2022/10/01 10:14:23 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * It prints the number n to the file descriptor fd.
+ * 
+ * param int n the number to print
+ * param int fd The file descriptor of the file to output to. 
+ * Standard output is file descriptor 1,
+ * standard error is file descriptor 2.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
