@@ -1,5 +1,5 @@
 ## Libft - Primer proyecto como estudiante de 42Madrid 🚀
-### TOC
-* [What is libft?](#what-is-libft)
-* [What's in it?](#whats-in-it)
-* [List of functions](#list-of-functions)  Click to each function to see an explication
+### Contenido
+* [Que es libft?](#what-is-libft)
+* [En que consiste?](#whats-in-it)
+* [Lista de funcciones](#list-of-functions)  Click to each function to see an explication
