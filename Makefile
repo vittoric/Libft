@@ -12,9 +12,9 @@
 
 NAME = libft.a
 
-CC = gcc
-CCFLAGS = -Wall -Wextra -Werror
-RM = rm -rf
+CC = gcc //compildor
+CCFLAGS = -Wall -Wextra -Werror //flags
+RM = rm -rf //borrar
 
 
 MY_SOURCES =ft_isdigit.c\
@@ -53,19 +53,18 @@ MY_SOURCES =ft_isdigit.c\
 						ft_split.c
 
 
-OBJS = $(MY_SOURCES:.c=.o)
-INCLUDE = libft.h
+OBJS = $(MY_SOURCES:.c=.o) // una variable cuya dependencia es convertir los . c en .o
 
 $(NAME) : $(OBJS)
-	@ar crs $(NAME) $(OBJS)
+	@ar crs $(NAME) $(OBJS) //crear el ejecutable
 
 all: $(NAME)
 
 %.o : %.c
-	@$(CC) $(CCFLAGS) -c -o $@ $<
+	@$(CC) $(CCFLAGS) -c -o $@ $< //indicadores
 clean:
 	@$(RM) $(OBJS)
 fclean: clean
 	@rm -f $(NAME)
-re: all fclean
+re: all fclean  //recompilar todo y limpiar
 .PHONY: all clean fclean re
