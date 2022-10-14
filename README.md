@@ -1,2 +1,2 @@
-<b>Libft - <b>
+## Libft
 Primer proyecto como estudiante de 42Madrid
