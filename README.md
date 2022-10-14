@@ -6,4 +6,4 @@
 
 ### ¿Que es libft?
 
-Libft es un proyecto individual en <b>42</b> que nos obliga a recrear algunas funciones de biblioteca C estándar para proyectos futuros y tener una comprensión más profunda de las estructuras de datos y los algoritmos básicos. En 42 no se nos permite usar algunas bibliotecas estándar en nuestros proyectos, por lo que tenemos que seguir aumentando esta biblioteca con nuestras propias funciones a medida que avanzamos en el programa.
+Libft es un proyecto individual en <b>42</b> que nos obliga a recrear algunas funciones de la biblioteca C estándar para futuros proyectos  y tener una comprensión más profunda de las estructuras de datos y los algoritmos básicos. En <b>42</b> no se nos permite usar algunas bibliotecas estándar en nuestros proyectos, por lo que tenemos que seguir aumentando esta biblioteca con nuestras propias funciones a medida que avanzamos en el cursus.
