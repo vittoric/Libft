@@ -29,7 +29,7 @@ Para poder hacer uso de `make`, en primer lugar debe crearse un archivo del tipo
 En estos apuntes voy a explicar, en particular, el Makefile que he hecho para el proyecto libft. 
 
 Aqui os dejo un link a stackoverflow del tutorial de las mejores prácticas y trucos para hacer un buen makefile. 
-https://stackoverflow.com/c/42network/questions/1604/1605
+@echo "https://stackoverflow.com/c/42network/questions/1604/1605"
 
 
 
