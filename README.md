@@ -21,8 +21,8 @@ Hay 4 secciones:
 
 
 ### Lista de funcciones
-Funciones de Libc | Funciones adicionales | Parte bonus | Funciones personales
-:----------- | :-----------: | :-----------: | -----------:
+Funciones de Libc         | Funciones adicionales         | Parte bonus                         | Funciones personales
+:-----------:             | :-----------:                 | :-----------:                       | -----------:
 [ft_memset](#ft_memset)		|[ft_substr](#ft_substr)        | [ft_lstnew](#ft_lstnew)             | [ft_islower](#ft_islower) 
 [ft_bzero](#ft_bzero)		  |[ft_strjoin](#ft_strjoin)      | [ft_lstadd_front](#ft_lstadd_front) | [ft_isupper](#ft_isupper) 
 [ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)      | [ft_lstsize](#ft_lstsize)           | [ft_isspace](#ft_isspace)   
