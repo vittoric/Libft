@@ -2,4 +2,4 @@
 ### Contenido
 * [Que es libft?](#what-is-libft)
 * [En que consiste?](#whats-in-it)
-* [Lista de funcciones](#list-of-functions)  Click to each function to see an explication
+* [Lista de funcciones](#list-of-functions)  Haga clic en cada función para ver una explicación.
