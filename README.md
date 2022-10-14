@@ -12,7 +12,7 @@ Libft es un proyecto individual en <b>42</b> que nos obliga a recrear algunas fu
 ### ¿En que consiste?
 
 Hay 4 secciones:
-    Parte obligatoria
+   *** Parte obligatoria
 1. **Funciones Libc:** Algunas de las funciones estándar de C
 2. **Funciones adicionales:** Funciones que serán útiles para proyectos posteriores
     Parte bonus
