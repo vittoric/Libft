@@ -2,6 +2,7 @@
 ### Contenido
 * [¿Que es libft?](#que-es-libft)
 * [¿En que consiste?](#en-que-consiste)
+* [¿Que es Makefile y como hacerlo?](#Que-es-Makefile-y-como-hacerlo)
 * [Lista de funcciones](#lista-de-funcciones)  (haga clic en cada función para ver una explicación)
 
 ### ¿Que es libft?
@@ -17,6 +18,23 @@ Hay 4 secciones:
 2. **Funciones adicionales:** Funciones que serán útiles para proyectos posteriores
 3. **Parte bonus:** funciones que serán útiles para la manipulación de listas
 4. **Funciones personales:** Funciones que creo que serán útiles más adelante
+
+
+## ¿Que es Makefile y como hacerlo?
+
+Un archivo del tipo *makefile* es un archivo que hace uso de la utilidad `make`. Esta utilidad determina que partes de un programa deben de compilarse, y les manda comandos para hacerlo. En esencia, un *makefile* sirve para autocompilar un proyecto en lugar de hacerlo manualmente.
+
+Para poder hacer uso de `make`, en primer lugar debe crearse un archivo del tipo *makefile*. Para ello basta con crear uno con nombre "makefile" o "Makefile". Ambos nombres son completamente válidos (el manual de la GNU recomienda usar el segundo, puesto que suele aparecer cerca del inicio en los listados de directorios, junto otros arhcivos importantes como README).
+
+Es posible también nombrar un archivo *makefile* con otro nombre, pero debemos especificarselo a make después con uno de los siguientes formatos:
+
+```bash
+make -f ARCHIVO
+make --file=ARCHIVO
+make --makefile=ARCHIVO
+```
+
+En estos apuntes se usarán ejemplos de programas en lenguaje C++. Los makefiles sirven para muchos más lenguajes de programación, además del presentado en estos apuntes. Para información más a fondo sobre makefiles que no aparezca en estos apuntes de puede consultar el manual de la GNU de la orden ``make``, cuyo enlace se encuentra al final del documento.
 
 
 
