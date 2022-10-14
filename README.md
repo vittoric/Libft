@@ -1,2 +1,1 @@
-## Libft
-Primer proyecto como estudiante de 42Madrid
+## Libft - Primer proyecto como estudiante de 42Madrid 🚀
