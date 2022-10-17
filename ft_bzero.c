@@ -21,7 +21,9 @@
  * param void s This is the pointer to the memory area to be filled.
  * param size_t n The number of bytes to be set to zero.
  */
-void	ft_bzero(void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n) // escribe n bytes puestos a cero en la cadena s
 {
-	ft_memset(s, 0, n);
+	ft_memset(s, 0, n); 	//borra los datos en los n bytes de la memoria 
+				//comenzando en la ubicación señalada por s, escribiendo ceros (0) en esa área
 }
