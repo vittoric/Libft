@@ -86,3 +86,12 @@ Rellena con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de
 Descripción | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------:  | :-----------: | :-----------:
 Borra los datos en los "n" bytes de la memoria comenzando en la ubicación señalada por "s" escribiendo ceros| El puntero al área de memoria que se va a rellenar | El número de bytes | Nada
+
+
+## [ft_memcpy](/ft_memcpy.c)
+
+`void	    *ft_memcpy(void *dst, const void *src, size_t n)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Copia n bytes del área de memoria src a la memoria de dst. Las áreas de memoria no deben superponerse.  Usa [ft_memmove](#ft_memmove) si las áreas de memoria se superponen| Área de memoria dst | La cadena de origen| El número de bytes a copiar | Un puntero a la cadena de destino.
