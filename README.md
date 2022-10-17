@@ -72,3 +72,10 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Rellena con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de memoria que se va a llenar | El valor x (convertido a unsigned char) a establecer | El número de bytes que se establecerá en el valor x | Un puntero al área de memoria s
+
+
+`void	  ft_bzero(void *s, size_t n) `
+
+Descripción | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------:  | :-----------: | :-----------:
+Borra los datos en los "n" bytes de la memoria comenzando en la ubicación señalada por "s" escribiendo ceros| El puntero al área de memoria que se va a rellenar | Nada
