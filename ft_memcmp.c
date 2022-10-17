@@ -32,7 +32,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	str1 = (unsigned const char *)s1;
 	str2 = (unsigned const char *)s2;
-	while (i < n)
+	while (i < n) //mientras i < que el tamaño de mi buffer
 	{
 		if (*str1 != *str2)
 		{
