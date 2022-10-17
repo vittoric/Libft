@@ -26,7 +26,9 @@ Un archivo del tipo *makefile* es un archivo que hace uso de la utilidad `make`.
 
 Para poder hacer uso de `make`, en primer lugar debe crearse un archivo del tipo *makefile*. Para ello basta con crear uno con nombre "makefile" o "Makefile". Ambos nombres son completamente válidos (el manual de la GNU recomienda usar el segundo, puesto que suele aparecer cerca del inicio en los listados de directorios, junto otros arhcivos importantes como README).
 
-En estos apuntes voy a explicar, en particular, el Makefile que he hecho para el proyecto libft. 
+En estos apuntes voy a explicar, en particular, el Makefile que he hecho para el proyecto libft.
+
+## [Makefile](/Makefile)
 
 Aqui os dejo un link a stackoverflow del tutorial de [las mejores prácticas y trucos para hacer un buen makefile](https://stackoverflow.com/c/42network/questions/1604/1605)
 
