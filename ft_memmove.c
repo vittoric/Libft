@@ -16,15 +16,11 @@
   from memory area src to memory area dst when dst is greater then src.
   Otherwise, only dest len characters will be copied.
   The two strings may overlap;
- * If the destination pointer is greater than the source pointer, then copy 
- the source pointer to the
- * destination pointer in reverse order. Otherwise, copy the source pointer 
- to the destination pointer
+ * If the destination pointer is greater than the source pointer, then copy  the source pointer to the
+ * destination pointer in reverse order. Otherwise, copy the source pointer  to the destination pointer
  * in the normal order
  * 
- * @param void dst This is the destination array where the content is to be 
- * copied, type-casted to a
- * pointer.
+ * @param void dst This is the destination array where the content is to be copied, type-casted to a pointer.
  * @param void src The source string.
  * @param size_t len The number of bytes to be moved.
  * 
