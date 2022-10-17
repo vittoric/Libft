@@ -15,6 +15,7 @@
 /**move n bytes (len) 
   from memory area src to memory area dst when dst is greater then src.
   Otherwise, only dest len characters will be copied.
+  The two strings may overlap;
  * If the destination pointer is greater than the source pointer, then copy 
  the source pointer to the
  * destination pointer in reverse order. Otherwise, copy the source pointer 
@@ -36,14 +37,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	if (src == NULL && dst == NULL)
 		return (NULL);
-	ptr = (unsigned char *)src;
+	ptr = (unsigned char *)src; // igualo mis punteros al valor de sus parametros
 	ptr2 = (unsigned char *)dst;
-	if (ptr2 >= ptr)
+	if (ptr2 >= ptr) // //si ptr2(source)  es mayor o igual que la pos de mi ptr(dest). 
 	{
-		while (len--)
-			ptr2[len] = ptr[len];
+		while (len--) //el tamaño de mi buffer sea distinto de cero
+			ptr2[len] = ptr[len]; // voy copiando cada elemento a la inversa para evitar overlaping.
 	}
-	else
-		ft_memcpy(ptr2, ptr, len);
-	return (dst);
+	else //si no
+		ft_memcpy(ptr2, ptr, len); // copio todos mis caracteres secuencialmente con memcpy
+	return (dst); //retorno dest.
 }
