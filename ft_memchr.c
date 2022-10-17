@@ -23,7 +23,7 @@
  * 
  * return The address of the first occurence of the character c in the string s.
  */
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n). //Se recibe una cadena, un carácter para encontrar y el tamaño del buffer
 {
 	size_t			i;
 	unsigned char	*str;
@@ -32,11 +32,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	str = (unsigned char *)s;
 	to_find = (unsigned char)c;
-	while (i < n)
+	while (i < n) //mientas i menor	que el tamaño del buffer. 
 	{
-		if (str[i] == to_find)
-			return (&str[i]);
-		i++;
+		if (str[i] == to_find) //si recorriendo str[i] encuentro la coincidencia que busco
+			return (&str[i]); //devuelvo la dirrecion de la posicion de la coincidencia 
+		i++; //contador para poder recorrer el str hasta que se encuentre la coincidencia que busco
 	}
-	return (NULL);
+	return (NULL); //si no hay una coincidencia devuelve NULL
 }
