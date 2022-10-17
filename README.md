@@ -67,7 +67,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 
 ## [ft_memset](/ft_memset.c)
 
-`void	  *ft_memset(void *ptr, int x, size_t n)`
+`void	    *ft_memset(void *ptr, int x, size_t n)`
 
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
@@ -76,7 +76,7 @@ Rellena con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de
 
 ## [ft_bzero](/ft_bzero.c)
 
-`void	  ft_bzero(void *s, size_t n) `
+`void	    ft_bzero(void *s, size_t n) `
 
 Descripción | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------:  | :-----------: | :-----------:
