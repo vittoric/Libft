@@ -63,3 +63,12 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_toupper](#ft_toupper) |                               |                                     | 
 [ft_tolower](#ft_tolower)	|                               |                                     | 
 [ft_calloc](#ft_calloc)   |                               |                                     |
+
+
+## [ft_memset](libft/ft_memset.c)
+
+`void       *ft_memset(void *s, int c, size_t len)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Fill with "len" bytes of "c" the memory of "s"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
