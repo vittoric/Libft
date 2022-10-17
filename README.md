@@ -34,6 +34,8 @@ Aqui os dejo un link a stackoverflow del tutorial de [las mejores prácticas y t
 
 
 
+
+
 ### Lista de funcciones
 Funciones de Libc         | Funciones adicionales         | Parte bonus                         | Funciones personales
 :-----------:             | :-----------:                 | :-----------:                       | :-----------:
