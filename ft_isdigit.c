@@ -13,15 +13,11 @@
 #include "libft.h"
 
 /**
- * It checks if the character is a digit.
- * 
- * param int v The character to be checked.
- * 
- * return 1 if the character is a digit, 0 if not.
+ * Comprueba si el carácter es un dígito.
  */
-int	ft_isdigit(int v)
+int	ft_isdigit(int v) // int v El carácter que se comprobará.
 {
 	if (v >= '0' && v <= '9')
-		return (1);
-	return (0);
+		return (1); //devuelve 1 si el carácter es un dígito
+	return (0); //0 si no lo es
 }
