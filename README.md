@@ -40,33 +40,26 @@ Aqui os dejo un link a stackoverflow del tutorial de [las mejores prácticas y t
 ### Lista de funcciones
 Funciones de Libc         | Funciones adicionales         | Parte bonus                         | Funciones personales
 :-----------:             | :-----------:                 | :-----------:                       | :-----------:
-[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)        | [ft_lstnew](#ft_lstnew)             | [ft_islower](#ft_islower) 
-[ft_bzero](#ft_bzero)		  |[ft_strjoin](#ft_strjoin)      | [ft_lstadd_front](#ft_lstadd_front) | [ft_isupper](#ft_isupper) 
-[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)      | [ft_lstsize](#ft_lstsize)           | [ft_isspace](#ft_isspace)   
- [ft_calloc](#ft_calloc) 	|[ft_split](#ft_split)          | [ft_lstlast](#ft_lstlast)           | 
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)            | [ft_lstadd_back](#ft_lstadd_back)   |
-[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)      | [ft_lstdelone](#ft_lstdelone)       | 
-[ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)         | 
-[ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)           | 
-[ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)             | 
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				                              | 
-[ft_strlcpy](#ft_strlcpy)	| 	                            |			                                | 
-[ft_strcat](#ft_strcat)		| 	                            |                                     | 
-[ft_strlcat](#ft_strlcat)	| 	                            |                                     | 
+[ft_isalpha](#ft_isalpha)		|[ft_substr](#ft_substr)        | [ft_lstnew](#ft_lstnew)             | [ft_islower](#ft_islower) 
+[ft_isdigit](#ft_isdigit)		  |[ft_strjoin](#ft_strjoin)      | [ft_lstadd_front](#ft_lstadd_front) | [ft_isupper](#ft_isupper) 
+[ft_isalnum](#ft_isalnum)		|[ft_strtrim](#ft_strjoin)      | [ft_lstsize](#ft_lstsize)           | [ft_isspace](#ft_isspace)   
+[ft_isascii](#ft_isascii) 	|[ft_split](#ft_split)          | [ft_lstlast](#ft_lstlast)           | 
+[ft_isprint](#ft_isprint)	|[ft_itoa](#ft_itoa)            | [ft_lstadd_back](#ft_lstadd_back)   |
+[ft_strlen](#ft_strlen)		|[ft_strmapi](#ft_strmapi)      | [ft_lstdelone](#ft_lstdelone)       | 
+[ft_memset](#ft_memset)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)         | 
+[ft_bzero](#ft_bzero)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)           | 
+[ft_memcpy](#ft_memcpy)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)             | 
+[ft_memmove](#ft_memmove)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				                              | 
+[ft_strlcpy](#ft_strlcpy)	| 	[ft_striteri](#ft_striteri)  |			                                | 
+[ft_strlcat](#ft_strlcat)		| 	                            |                                     | 
+[ft_tolower](#ft_tolower)	| 	                            |                                     | 
 [ft_strchr](#ft_strchr)		| 	                            |                                     | 
 [ft_strrchr](#ft_strrchr)	| 	                            |                                     | 
-[ft_strstr](#ft_strstr)		|                               |                                     |  
+[ft_strncmp](#ft_strncmp)		|                               |                                     |  
+[ft_memchr](#ft_memchr)	| 	                            |                                     | 
+[ft_memcmp](#ft_memcmp)		| 	                            |                                     | 
 [ft_strnstr](#ft_strnstr)	| 	                            |                                     | 
-[ft_strcmp](#ft_strcmp)		| 	                            |                                     | 
-[ft_strncmp](#ft_strncmp)	| 	                            |                                     | 
 [ft_atoi](#ft_atoi)       | 	                            |                                     | 
-[ft_isalpha](#ft_isalpha)	| 	                            |                                     | 
-[ft_isdigit](#ft_isdigit)	| 	                            |                                     |
-[ft_isalnum](#ft_isalnum)	|                               |                                     | 
-[ft_isascii](#ft_isascii)	|                               |                                     |  
-[ft_isprint](#ft_isprint)	|                               |                                     | 
-[ft_toupper](#ft_toupper) |                               |                                     | 
-[ft_tolower](#ft_tolower)	|                               |                                     | 
 
 
 ## [ft_memset](/ft_memset.c)
