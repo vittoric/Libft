@@ -19,9 +19,9 @@
  * 
  * return 1 if the character is printable, 0 if not.
  */
-int	ft_isprint(int v)
+int	ft_isprint(int c)
 {
-	if (v >= 32 && v <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }
