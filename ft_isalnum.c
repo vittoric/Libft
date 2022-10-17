@@ -15,8 +15,8 @@
 /**
  * Comprueba si el carácter es alfanumérico.
  */
-int	ft_isalnum(int v) //int v El carácter que se comprobará.
+int	ft_isalnum(int c) //int v El carácter que se comprobará.
 {
-	return (ft_isalpha(v) || ft_isdigit(v));  	//las condiciones en un return hacen que se evaluan 
+	return (ft_isalpha(c) || ft_isdigit(c));  	//las condiciones en un return hacen que se evaluan 
 							//directamente si una de las condiciones es verdadera o falsa
 }
