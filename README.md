@@ -60,6 +60,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_memcmp](#ft_memcmp)		| 	                            |                                     | 
 [ft_strnstr](#ft_strnstr)	| 	                            |                                     | 
 [ft_atoi](#ft_atoi)       | 	                            |                                     | 
+[ft_toupper](#ft_toupper)       | 	                            |                                     | 
 
 
 ## [ft_memset](/ft_memset.c)
