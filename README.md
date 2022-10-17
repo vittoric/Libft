@@ -95,3 +95,12 @@ Borra los datos en los "n" bytes de la memoria comenzando en la ubicación seña
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copia n bytes del área de memoria src a la memoria de dst. Las áreas de memoria no deben superponerse.  Usa [ft_memmove](#ft_memmove) si las áreas de memoria se superponen| Área de memoria dst | La cadena de origen| El número de bytes a copiar | Un puntero a la cadena de destino
+
+
+## [ft_memmove](/ft_memmove.c)
+
+`void       *ft_memmove(void *dst, const void *src, size_t len)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory ares arc | The number of bytes | A pointer to the memory area dst
