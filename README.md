@@ -71,4 +71,4 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Rellenar con "n" bytes de "x" la memoria de "ptr"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
+Rellenar con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de memoria que se va a llenar. | EL Valor x (convertido a unsigned char) a establecer | El número de bytes que se establecerá en el valor x | Un puntero al área de memoria S
