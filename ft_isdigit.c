@@ -15,9 +15,9 @@
 /**
  * Comprueba si el carácter es un dígito.
  */
-int	ft_isdigit(int v) // int v El carácter que se comprobará.
+int	ft_isdigit(int c) // int v El carácter que se comprobará.
 {
-	if (v >= '0' && v <= '9')
+	if (c >= '0' && c <= '9')
 		return (1); //devuelve 1 si el carácter es un dígito
 	return (0); //0 si no lo es
 }
