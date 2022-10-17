@@ -69,6 +69,6 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 
 `void	  *ft_memset(void *ptr, int x, size_t n)`
 
-Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Fill with "len" bytes of "c" the memory of "s"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
+Rellenar con "n" bytes de "x" la memoria de "ptr"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
