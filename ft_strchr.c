@@ -24,16 +24,16 @@ char	*ft_strchr(const char *s, int c)
 {
 	char	a;
 
-	a = c;
-	while (*s)
+	a = c; //se iguala la variable al valor de sus parametro de entrada
+	while (*s) //mientras el puntero exista
 	{
-		if (*s == a)
+		if (*s == a) //mientras el puntero a la cadena a buscar sea igual a caracter a buscar
 		{
-			return ((char *) s);
+			return ((char *) s); // devuelvo un char puntero a la coincidencia.
 		}
-		s++;
+		s++; //contador para poder recorer el string
 	}
-	if (a == '\0')
-		return ((char *) s);
+	if (a == '\0') //mietntras el caracter sea igual a NULL
+		return ((char *) s); // devuelvo un char puntero a la coincidencia.
 	return (0);
 }
