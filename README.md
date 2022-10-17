@@ -67,7 +67,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 
 ## [ft_memset](Libft/ft_memset.c)
 
-`void       *ft_memset(void *s, int c, size_t len)`
+`void	  *ft_memset(void *ptr, int x, size_t n)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
