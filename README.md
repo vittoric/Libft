@@ -38,8 +38,8 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_memset](#ft_memset)		|[ft_substr](#ft_substr)        | [ft_lstnew](#ft_lstnew)             | [ft_islower](#ft_islower) 
 [ft_bzero](#ft_bzero)		  |[ft_strjoin](#ft_strjoin)      | [ft_lstadd_front](#ft_lstadd_front) | [ft_isupper](#ft_isupper) 
 [ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)      | [ft_lstsize](#ft_lstsize)           | [ft_isspace](#ft_isspace)   
-[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)          | [ft_lstlast](#ft_lstlast)           | [ft_strndup](#ft_strndup)
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)            | [ft_lstadd_back](#ft_lstadd_back)   | [ft_strcdup](#ft_strcdup)
+[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)          | [ft_lstlast](#ft_lstlast)           | 
+[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)            | [ft_lstadd_back](#ft_lstadd_back)   |
 [ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)      | [ft_lstdelone](#ft_lstdelone)       | 
 [ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)         | 
 [ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)           | 
