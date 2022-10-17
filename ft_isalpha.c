@@ -14,9 +14,9 @@
 
 /* test any char for an alphabetic char */
 
-int	ft_isalpha(int v)
+int	ft_isalpha(int c)
 {
-	if ((v >= 'A' && v <= 'Z') || (v >= 'a' && v <= 'z'))
-		return (1);
-	return (0);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && x <= 'z')) //mientras mi char es alfabetico
+		return (1); //devuele 1 que es verdadero
+	return (0); // si no devuelve 0 que es falso
 }
