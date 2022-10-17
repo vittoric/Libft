@@ -74,6 +74,8 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Rellena con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de memoria que se va a llenar | El valor x (convertido a unsigned char) a establecer | El número de bytes que se establecerá en el valor x | Un puntero al área de memoria s
 
 
+## [ft_bzero](/ft_bzero.c)
+
 `void	  ft_bzero(void *s, size_t n) `
 
 Descripción | Param. #1 | Param. #2 | Return Value
