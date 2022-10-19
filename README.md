@@ -63,6 +63,60 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_toupper](#ft_toupper)       | 	                            |                                     | 
 
 
+
+## [ft_isalpha](/ft_isalpha.c)
+
+`int        ft_isalpha(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Busca un carácter alfabético, es equivalente a([ft_isupper](#ft_isupper)(c) o [ft_islower](#ft_islower)(c)) | El caracter a buscar | 0 si el carácter resulta falso y 1 si el carácter resulta verdadero
+
+
+## [ft_isdigit](/ft_isdigit.c)
+
+`int         ft_isdigit(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Busca un dígito (de 0 a 9)| El caracter a buscar | 0 si el carácter resulta falso y 1 si el carácter resulta verdadero
+
+
+## [ft_isalnum](/ft_isalnum.c)
+
+`int        ft_isalnum(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Compruebe si hay un carácter alfanumérico, es equivalente a([ft_isalpha](#ft_isalpha) o[ft_isdigit](#ft_isdigit))| El caracter a buscar  | 0 si el carácter resulta falso y 1 si el carácter resulta verdadero
+
+
+## [ft_isascii](/ft_isascii.c)
+
+`int        ft_isascii(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Comprueba un carácter ASCII, que es cualquier carácter entre 0 y 127 inclusive| El caracter a buscar | 0 si el carácter resulta falso y 1 si el carácter resulta verdadero
+
+
+## [ft_isprint](/ft_isprint.c)
+
+`int        ft_isprint(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Comprueba cualquier carácter imprimible, incluido el espacio| El caracter a buscar | 0 si el carácter resulta falso y 1 si el carácter resulta verdadero
+
+
+## [ft_strlen](/ft_strlen.c) 
+`size_t	    ft_strlen(const char *str)`
+
+Descripción | Param. #1 | Return Values
+:-----------: | :-----------: | :-----------:
+Calcula la longitud de la cadena apuntada por str, excluyendo el byte nulo de terminación ('\0')	| Es la cadena de la que vamos a encontrar la longitud | La longitud de la cadena
+
+
 ## [ft_memset](/ft_memset.c)
 
 `void	    *ft_memset(void *ptr, int x, size_t n)`
@@ -70,6 +124,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Rellena con "n" bytes de "x" la memoria de "ptr"| *ptr es el puntero al área de memoria que se va a llenar | El valor x (convertido a unsigned char) a establecer | El número de bytes que se establecerá en el valor x | Un puntero al área de memoria s
+
 
 
 ## [ft_bzero](/ft_bzero.c)
@@ -81,6 +136,8 @@ Descripción | Param. #1 | Param. #2 | Return Value
 Borra los datos en los "n" bytes de la memoria comenzando en la ubicación señalada por "s" escribiendo ceros| El puntero al área de memoria que se va a rellenar | El número de bytes | Nada
 
 
+
+
 ## [ft_memcpy](/ft_memcpy.c)
 
 `void	    *ft_memcpy(void *dst, const void *src, size_t n)`
@@ -90,6 +147,7 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Copia n bytes del área de memoria src a la memoria de dst. Las áreas de memoria no deben superponerse.  Usa [ft_memmove](#ft_memmove) si las áreas de memoria se superponen| Área de memoria dst | La cadena de origen| El número de bytes a copiar | Un puntero a la cadena de destino
 
 
+
 ## [ft_memmove](/ft_memmove.c)
 
 `void       *ft_memmove(void *dst, const void *src, size_t len)`
@@ -97,3 +155,9 @@ Copia n bytes del área de memoria src a la memoria de dst. Las áreas de memori
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory ares arc | The number of bytes | A pointer to the memory area dst
+
+
+
+
+
+
