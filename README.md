@@ -163,7 +163,7 @@ Copia len bytes de la memoria de src a dst. La memoria pueden superponerse. Prim
 
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copia la cadena a la que apunta src, incluido el byte nulo de terminación ('\0'), al búfer señalado por dst| La cadena de destino | La cadena que se va a copiar | El tamaño del búfer de destino | Longitud total de la cadena a crear (longitud de src)
+Copia la cadena a la que apunta src, incluido el byte nulo de terminación ('\0'), al búfer señalado por dst| La cadena de destino | La cadena que se va a copiar | Número de caracteres que se copiarán de src | Longitud total de la cadena a crear (longitud de src)
 
 
 
