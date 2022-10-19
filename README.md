@@ -61,7 +61,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_memcmp](#ft_memcmp)		| 	                            |                                     | 
 [ft_strnstr](#ft_strnstr)	| 	                            |                                     | 
 [ft_atoi](#ft_atoi)       | 	                            |                                     | 
-       | 	                            |                                     | 
+
 
 
 
@@ -183,6 +183,34 @@ Concatena la cadena src al final de dst. Se concatenará al máximo tamaño - st
 Descripción | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Si el carácter pasado como argumento es una mayúscula, conviértalo a minúscula| El caracter a convertir | Si c es una letra mayúscula, devuelve su equivalente en minúscula. De lo contrario, devuelve c
+
+
+## [ft_toupper](/ft_toupper.c)
+
+`int        ft_toupper(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Si el carácter pasado como argumento es una minúscula, conviértalo a mayúscula| El caracter a convertir | Si c es una letra minúscula, devuelve su equivalente en mayúscula. De lo contrario, devuelve c
+
+
+
+## [ft_strchr](/ft_strchr.c)
+
+`char		*ft_strchr(const char *s, int c)`
+
+Descripción | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Localiza la primera aparición de 'c' en la cadena a la que apunta 's'. El carácter nulo final se considera parte de la cadena, por lo tanto, si 'c' es '\0', ubica el final '\0'| Puntero a string | Caracter a buscar | Un puntero a la primera aparición del carácter c en la cadena s o NULL si no se encuentra el carácter
+
+
+## [ft_strrchr](/ft_strrchr.c)
+
+`char		*ft_strrchr(const char *s, int c)`
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Localiza la última aparición de 'c' en la cadena a la que apunta 's'. El carácter nulo final se considera parte de la cadena, por lo tanto, si 'c' es '\0', ubica el final '\0'| Puntero a string| Caracter a buscar | Un puntero a la última aparición del carácter c en la cadena s o NULL si no se encuentra el carácter
 
 
 
