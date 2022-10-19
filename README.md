@@ -35,10 +35,10 @@ En estos apuntes voy a explicar, en particular, el Makefile que he hecho para el
 Aqui os dejo un link a stackoverflow del tutorial de [las mejores prácticas y trucos para hacer un buen makefile](https://stackoverflow.com/c/42network/questions/1604/1605)
 
 #
-<br><br>
+<br>
 
 ### Lista de funcciones
-
+<br>
 
 Funciones de Libc         | Funciones adicionales         | Parte bonus                         | Funciones personales
 :-----------:             | :-----------:                 | :-----------:                       | :-----------:
