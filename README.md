@@ -157,6 +157,15 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Copia len bytes de la memoria de src a dst. La memoria pueden superponerse. Primero, los bytes en src se copian en una matriz temporal y luego en dst| Esta es la matriz de destino donde se copiará el contenido, convertido a un puntero | La cadena de origen | El número de bytes | Un puntero a la cadena de destino
 
 
+## [ft_strlcpy](/ft_strlcpy.c)
+
+`size_t	    ft_strlcpy(char *dst, const char *src, size_t dstsize)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Copia la cadena a la que apunta src, incluido el byte nulo de terminación ('\0'), al búfer señalado por dst| La cadena de destino | La cadena que se va a copiar | El tamaño del búfer de destino | Longitud total de la cadena a crear (longitud de src)
+
+
 
 
 
