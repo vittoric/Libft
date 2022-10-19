@@ -25,7 +25,7 @@ char	*ft_strchr(const char *s, int c)
 	char	a;
 
 	a = c; //se iguala la variable al valor de sus parametro de entrada
-	while (*s) //mientras el puntero exista
+	while (*s) //mientras el puntero a la cadena exista
 	{
 		if (*s == a) //mientras el puntero a la cadena a buscar sea igual a caracter a buscar
 		{
@@ -34,6 +34,6 @@ char	*ft_strchr(const char *s, int c)
 		s++; //contador para poder recorer el string
 	}
 	if (a == '\0') //mietntras el caracter sea igual a NULL
-		return ((char *) s); // devuelvo un char puntero a la coincidencia.
+		return ((char *) s); // devuelvo un char puntero a la coincidencia
 	return (0);
 }
