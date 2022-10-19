@@ -210,9 +210,37 @@ Localiza la primera aparición de 'c' en la cadena a la que apunta 's'. El cará
 
 `char		*ft_strrchr(const char *s, int c)`
 
-Description | Param. #1 | Param. #2 | Return Value
+Descripción | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Localiza la última aparición de 'c' en la cadena a la que apunta 's'. El carácter nulo final se considera parte de la cadena, por lo tanto, si 'c' es '\0', ubica el final '\0'| Puntero a string| Caracter a buscar | Un puntero a la última aparición del carácter c en la cadena s o NULL si no se encuentra el carácter
+
+
+## [ft_strncmp](/ft_strncmp.c)
+
+`int	  ft_strncmp(const char *s1, const char *s2, size_t n)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Compara los primeros n caracteres de las cadenas s1 y s2| La primera cadena que se va a comparar| La cadena para comparar | El número máximo de caracteres para comparar | La diferencia entre los dos primeros caracteres que difieren en el
+cadenas que se comparan
+
+
+ ## [ft_memchr](/ft_memchr.c)
+
+`void       *ft_memchr(const void *s, int c, size_t n)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Localiza la primera ocurrencia de c (convertida a unsigned char) en la cadena s| La cadena a buscar| Caracter a buscar  | El número de bytes a buscar | Un puntero al byte localizado, o NULL si tal byte no existe dentro de n bytes
+
+
+## [ft_memcmp](libft/ft_memcmp.c)
+
+`int	     ft_memcmp(const void *s1, const void *s2, size_t n)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Compara los primeros n bytes del área de memoria s1 a los primeros n bytes del área de memoria s2 | La primera cadena a comparar| La cadena a comparar | El número de bytes a comparar | < 0 si s1 es menor que s2;  > 0 si s1 es mayor que s2; = 0 si s1 es igual a s2
 
 
 
