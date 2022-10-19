@@ -233,7 +233,7 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Localiza la primera ocurrencia de c (convertida a unsigned char) en la cadena s| La cadena a buscar| Caracter a buscar  | El número de bytes a buscar | Un puntero al byte localizado, o NULL si tal byte no existe dentro de n bytes
 
 
-## [ft_memcmp](libft/ft_memcmp.c)
+## [ft_memcmp](/ft_memcmp.c)
 
 `int	     ft_memcmp(const void *s1, const void *s2, size_t n)`
 
@@ -242,7 +242,7 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Compara los primeros n bytes del área de memoria s1 a los primeros n bytes del área de memoria s2 | La primera cadena a comparar| La cadena a comparar | El número de bytes a comparar | < 0 si s1 es menor que s2;  > 0 si s1 es mayor que s2; = 0 si s1 es igual a s2
 
 
-## [ft_strnstr](libft/ft_strnstr.c)
+## [ft_strnstr](/ft_strnstr.c)
 
 `char       *ft_strnstr(const char *haystack, const char *needle, size_t len)`
 
