@@ -53,6 +53,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_strlcpy](#ft_strlcpy)	| 	[ft_striteri](#ft_striteri)  |			                                | 
 [ft_strlcat](#ft_strlcat)		| 	                            |                                     | 
 [ft_tolower](#ft_tolower)	| 	                            |                                     | 
+[ft_toupper](#ft_toupper)| 	                            |                                     | 
 [ft_strchr](#ft_strchr)		| 	                            |                                     | 
 [ft_strrchr](#ft_strrchr)	| 	                            |                                     | 
 [ft_strncmp](#ft_strncmp)		|                               |                                     |  
@@ -60,7 +61,7 @@ Funciones de Libc         | Funciones adicionales         | Parte bonus         
 [ft_memcmp](#ft_memcmp)		| 	                            |                                     | 
 [ft_strnstr](#ft_strnstr)	| 	                            |                                     | 
 [ft_atoi](#ft_atoi)       | 	                            |                                     | 
-[ft_toupper](#ft_toupper)       | 	                            |                                     | 
+       | 	                            |                                     | 
 
 
 
@@ -173,6 +174,15 @@ Copia la cadena a la que apunta src, incluido el byte nulo de terminación ('\0'
 Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Concatena la cadena src al final de dst. Se concatenará al máximo tamaño - strlen (dst) - 1 bytes, terminando en NULL el resultado| La cadena de destino | Cadena que se agregará a dst | Número máximo de caracteres que se agregarán | La longitud de la cadena que intentó crear en dest
+
+
+## [ft_tolower](/ft_tolower.c)
+
+`int        ft_tolower(int c)`
+
+Descripción | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Si el carácter pasado como argumento es una mayúscula, conviértalo a minúscula| El caracter a convertir | Si c es una letra mayúscula, devuelve su equivalente en minúscula. De lo contrario, devuelve c
 
 
 
