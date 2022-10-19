@@ -19,12 +19,13 @@
  * 
  * return The length of the string.
  */
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
 
-	i = 0;
-	while (str[i] != '\0')
-	i++;
-	return (i);
+size_t	ft_strlen(const char *str) //Esta es la cadena de la que vamos a encontrar la longitud
+{
+	size_t	i; //declaro una variable contador
+
+	i = 0; //igualar el contador a cero
+	while (str[i] != '\0') //mientras mi string en la posicion i sea distinto de caracter nulo de terminación 
+	i++; //aumento el iterador
+	return (i); // devuelvo el número de caracteres de la cadena 
 }
