@@ -34,8 +34,9 @@ Aqui os dejo un link a stackoverflow del tutorial de [las mejores prácticas y t
 <br><br>
 
 
-
 ### Lista de funcciones
+
+
 Funciones de Libc         | Funciones adicionales         | Parte bonus                         | Funciones personales
 :-----------:             | :-----------:                 | :-----------:                       | :-----------:
 [ft_isalpha](#ft_isalpha)		|[ft_substr](#ft_substr)        | [ft_lstnew](#ft_lstnew)             | [ft_islower](#ft_islower) 
