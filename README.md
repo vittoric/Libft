@@ -248,7 +248,7 @@ Compara los primeros n bytes del área de memoria s1 a los primeros n bytes del 
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Ubique la subcadena, donde no se buscan más de los caracteres 'len'. Busca la primera aparición de la subcadena 'needle' en la cadena 'haystack'. Los bytes nulos finales ('\0') no se comparan.| La cadena a buscar | La cadena que se buscará en la cadena 'haystack'| La cantidad máxima de caracteres a buscar | Un puntero a la primera aparición de subcadena 'needle' en el 'haystack'. NULL si no se encuentra la subcadena. Si 'needle' es una cadena vacía, se devuelve 'haystack'
+Ubiqua la subcadena, donde no se buscan más de los caracteres 'len'. Busca la primera aparición de la subcadena 'needle' en la cadena 'haystack'. Los bytes nulos finales ('\0') no se comparan.| La cadena a buscar | La cadena que se buscará en la cadena 'haystack'| La cantidad máxima de caracteres a buscar | Un puntero a la primera aparición de subcadena 'needle' en el 'haystack'. NULL si no se encuentra la subcadena. Si 'needle' es una cadena vacía, se devuelve 'haystack'
 
 
 
