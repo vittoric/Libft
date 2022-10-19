@@ -219,7 +219,7 @@ Localiza la última aparición de 'c' en la cadena a la que apunta 's'. El cará
 
 `int	  ft_strncmp(const char *s1, const char *s2, size_t n)`
 
-Descripción | Param. #1 | Param. #2 | Param. #3 | | Return Value
+Descripción | Param. #1 | Param. #2 | Param. #3 |  Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Compara los primeros n caracteres de las cadenas s1 y s2| La primera cadena que se va a comparar| La cadena para comparar | El número máximo de caracteres para comparar | La diferencia entre los dos primeros caracteres que difieren en el
 cadenas que se comparan
