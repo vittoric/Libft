@@ -242,6 +242,15 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Compara los primeros n bytes del área de memoria s1 a los primeros n bytes del área de memoria s2 | La primera cadena a comparar| La cadena a comparar | El número de bytes a comparar | < 0 si s1 es menor que s2;  > 0 si s1 es mayor que s2; = 0 si s1 es igual a s2
 
 
+## [ft_strnstr](libft/ft_strnstr.c)
+
+`char       *ft_strnstr(const char *haystack, const char *needle, size_t len)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Ubique la subcadena, donde no se buscan más de los caracteres 'len'. Busca la primera aparición de la subcadena 'needle' en la cadena 'haystack'. Los bytes nulos finales ('\0') no se comparan.| La cadena a buscar | La cadena que se buscará en la cadena 'haystack'| La cantidad máxima de caracteres a buscar | Un puntero a la primera aparición de subcadena 'needle' en el 'haystack'. NULL si no se encuentra la subcadena. Si 'needle' es una cadena vacía, se devuelve 'haystack'
+
+
 
 
 
