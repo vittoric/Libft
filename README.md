@@ -150,11 +150,11 @@ Copia n bytes del área de memoria src a la memoria de dst. Las áreas de memori
 
 ## [ft_memmove](/ft_memmove.c)
 
-`void       *ft_memmove(void *dst, const void *src, size_t len)`
+`void	      *ft_memmove(void *dst, const void *src, size_t len)`
 
-Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory ares arc | The number of bytes | A pointer to the memory area dst
+Copia len bytes de la memoria de src a dst. La memoria pueden superponerse. Primero, los bytes en src se copian en una matriz temporal y luego en dst| Esta es la matriz de destino donde se copiará el contenido, convertido a un puntero | La cadena de origen | El número de bytes | Un puntero a la cadena de destino
 
 
 
