@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-/**move n bytes (len) 
-  from memory area src to memory area dst when dst is greater then src.
+/**  Move n bytes (len) from memory area src to memory area dst when dst is greater then src.
   Otherwise, only dest len characters will be copied.
   The two strings may overlap;
+  
  * If the destination pointer is greater than the source pointer, then copy  the source pointer to the
  * destination pointer in reverse order. Otherwise, copy the source pointer  to the destination pointer
  * in the normal order
@@ -26,21 +26,22 @@
  * 
  * @return A pointer to the destination string.
  */
-void	*ft_memmove(void *dst, const void *src, size_t len)
+
+void	*ft_memmove(void *dst, const void *src, size_t len) //Mueva n bytes (len) del área de memoria src al área de memoria dst cuando dst es mayor que src.
 {
-	unsigned char	*ptr;
-	unsigned char	*ptr2;
+	unsigned char	*d;
+	unsigned char	*s;
 
 	if (src == NULL && dst == NULL)
 		return (NULL);
-	ptr = (unsigned char *)src; // igualo mis punteros al valor de sus parametros
-	ptr2 = (unsigned char *)dst;
-	if (ptr2 >= ptr) // //si ptr2(source)  es mayor o igual que la pos de mi ptr(dest). 
+	d = (unsigned char *)dst; // igualo mis punteros al valor de sus parametros
+	s = (unsigned char *)src; 
+	if (d >= s) // //si s(source)  es mayor o igual que la pos de mi d(dest)
 	{
 		while (len--) //el tamaño de mi buffer sea distinto de cero
-			ptr2[len] = ptr[len]; // voy copiando cada elemento a la inversa para evitar overlaping.
+			d[len] = s[len]; // voy copiando cada elemento a la inversa para evitar overlaping.
 	}
 	else //si no
-		ft_memcpy(ptr2, ptr, len); // copio todos mis caracteres secuencialmente con memcpy
+		ft_memcpy(d, s, len); // copio todos mis caracteres secuencialmente con memcpy
 	return (dst); //retorno dest.
 }
