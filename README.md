@@ -20,7 +20,7 @@ Hay 4 secciones:
 4. **Funciones personales:** Funciones que creo que serán útiles más adelante
 
 
-## ¿Que es Makefile y como hacerlo?
+## ¿Que es[Makefile](/Makefile) y como hacerlo?
 
 Un archivo del tipo *makefile* es un archivo que hace uso de la utilidad `make`. Esta utilidad determina que partes de un programa deben de compilarse, y les manda comandos para hacerlo. En esencia, un *makefile* sirve para autocompilar un proyecto en lugar de hacerlo manualmente.
 
