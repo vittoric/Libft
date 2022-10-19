@@ -31,13 +31,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	j = 0;
-	if (needle[i] == '\0')
-		return (((char *)haystack + i));
-	while (haystack[i] != '\0' && i < len)
+	if (needle[i] == '\0')				// si mi string buscado es igual a 0
+		return (((char *)haystack + i));	//retorno un puntero al string de origen
+	while (haystack[i] != '\0' && i < len)		//mientras mi string de origen sea distinto de cero &&  i menor al tamaño de mi buffer  
 	{
-		if (haystack[i] == needle[j])
+		if (haystack[i] == needle[j])		//si el haystack en la posicion i es igual al needle en la posicion j
 		{
-			while (haystack[i + j] == needle[j] && ((i + j) < len))
+			while (haystack[i + j] == needle[j] && ((i + j) < len))  //
 			{
 				if (needle[j + 1] == '\0')
 					return (((char *)haystack + i));
