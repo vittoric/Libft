@@ -166,6 +166,14 @@ Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
 Copia la cadena a la que apunta src, incluido el byte nulo de terminación ('\0'), al búfer señalado por dst| La cadena de destino | La cadena que se va a copiar | Número de caracteres que se copiarán de src | Longitud total de la cadena a crear (longitud de src)
 
 
+## [ft_strlcat](/ft_strlcat.c)
+
+`size_t	      ft_strlcat(char *dest, const char *src, size_t dstsize)`
+
+Descripción | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Concatena la cadena src al final de dst. Se concatenará al máximo tamaño - strlen (dst) - 1 bytes, terminando en NULL el resultado| La cadena de destino | Cadena que se agregará a dst | Número máximo de caracteres que se agregarán | La longitud de la cadena que intentó crear en dest
+
 
 
 
