@@ -13,15 +13,15 @@
 #include "libft.h"
 
 /**
- * If the value of the character is between 'a' and 'z', subtract 32 from it
+ * If the character passed as an argument is a lowercase, convert to upper
  * 
  * param int v The character to be converted.
  * 
  * return the value of the character converted to uppercase.
  */
-int	ft_toupper(int v)
+int	ft_toupper(int c)  //carácter pasado como argumento
 {
-	if (v >= 'a' && v <= 'z')
-		return (v - 32);
-	return (v);
+	if (c >= 'a' && c <= 'z') //Si c es una letra minúscula
+		return (c - 32);  //devuelve su equivalente en mayúscula (ver tabla ASCII porque -32 nos situa en la posicion de la misma letra pasada pero en mayúscula)
+	return (c); //de lo contrario, devuelve c (carácter pasado como argumento)
 }
