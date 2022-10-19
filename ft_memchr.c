@@ -32,11 +32,11 @@ void	*ft_memchr(const void *s, int c, size_t n). //Se recibe una cadena, un car�
 	i = 0;
 	str = (unsigned char *)s;
 	to_find = (unsigned char)c;
-	while (i < n) //mientas i menor	que el tamaño del buffer. 
+	while (i < n) 				//mientas i menor	que el tamaño del buffer. 
 	{
-		if (str[i] == to_find) //si recorriendo str[i] encuentro la coincidencia que busco
-			return (&str[i]); //devuelvo la dirrecion de la posicion de la coincidencia 
-		i++; //contador para poder recorrer el str hasta que se encuentre la coincidencia que busco
+		if (str[i] == to_find) 		//si recorriendo str[i] encuentro la coincidencia que busco
+			return (&str[i]); 	//devuelvo la dirrecion de la posicion de la coincidencia 
+		i++; 				//contador para poder recorrer el str hasta que se encuentre la coincidencia que busco
 	}
-	return (NULL); //si no hay una coincidencia devuelve NULL
+	return (NULL); 				//si no hay una coincidencia devuelve NULL
 }
