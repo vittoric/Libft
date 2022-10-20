@@ -24,28 +24,30 @@
  * @return a pointer to the first occurrence of the substring needle in 
  * the string haystack.
  */
+
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	size_t	j;
+	size_t h;
+	size_t n;
 
-	i = 0;
-	j = 0;
-	if (needle[i] == '\0')				// si mi string buscado es igual a 0
-		return (((char *)haystack + i));	//retorno un puntero al string de origen
-	while (haystack[i] != '\0' && i < len)		//mientras mi string de origen sea distinto de cero &&  i menor al tamaño de mi buffer  
+	h = 0;
+	if (needle[h] == '\0')  			// si mi string buscado es igual a 0
+		return ((char *)haystack);  		//retorno un puntero al string de origen
+	while (haystack[h] != '\0') 			//mientras la sring en que busco sea diferente de cero
 	{
-		if (haystack[i] == needle[j])		//si el haystack en la posicion i es igual al needle en la posicion j
+		n = 0;
+		while (haystack[h + n] == needle[n] && (h + n) < len)
 		{
-			while (haystack[i + j] == needle[j] && ((i + j) < len))  //
-			{
-				if (needle[j + 1] == '\0')
-					return (((char *)haystack + i));
-				j++;
-			}
-			j = 0;
+			if (haystack[h + n] == '\0' && needle[n] == '\0')
+				return ((char *)&haystack[h]);
+			n++;
 		}
-		i++;
+		if (needle[n] == '\0')
+			return ((char *)haystack + h);
+		h++;
 	}
 	return (0);
+}
+
 }
