@@ -32,15 +32,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t n;
 
 	h = 0;
-	if (needle[h] == '\0')  			// si mi string buscado es igual a 0
+	if (needle[h]  == '\0')  			// si mi string buscado es igual a 0
 		return ((char *)haystack);  		//retorno un puntero al string de origen
-	while (haystack[h] != '\0') 			//mientras la sring en que busco sea diferente de cero
+	while (haystack[h]) 			//mientras la sring en que busco sea diferente de cero
 	{
 		n = 0;
 		while (haystack[h + n] == needle[n] && (h + n) < len)
 		{
 			if (haystack[h + n] == '\0' && needle[n] == '\0')
-				return ((char *)&haystack[h]);
+				return ((char *)haystack + h);
 			n++;
 		}
 		if (needle[n] == '\0')
