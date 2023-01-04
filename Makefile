@@ -66,5 +66,5 @@ clean:
 	@$(RM) $(OBJS)
 fclean: clean
 	@rm -f $(NAME)
-re: all fclean  //recompilar todo y limpiar
+re: fclean all //limpiar y recompilar todo
 .PHONY: all clean fclean re
