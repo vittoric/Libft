@@ -271,6 +271,16 @@ La función primero verifica si la cadena de entrada es NULL. Si es así, devuel
 
 
 
+## [ft_strjoin](/ft_strjoin.c)
+
+`char	*ft_strjoin(char const *s1, char const *s2)`
+
+Description | Param. #1 | Param. #2  | Return Value
+:-----------: | :-----------:  | :-----------: | :-----------:
+La función primero verifica si ambas cadenas de entrada no son NULL. Si alguno de ellos es NULL, devuelve NULL. A continuación, calcula las longitudes de las dos cadenas de entrada mediante la función ft_strlen. Luego asigna memoria para la cadena concatenada usando malloc y verifica si la asignación fue exitosa. Si no fuera así, la función devuelve NULL. Luego, la función inicializa una variable int (i) a -1 e ingresa a un bucle que copia los caracteres de la primera cadena de entrada a la cadena concatenada, uno por uno. Una vez que finaliza el primer ciclo, la función restablece i en -1 e ingresa a otro ciclo que copia los caracteres de la segunda cadena de entrada a la cadena concatenada, comenzando al final de la primera cadena de entrada. Finalmente, la función agrega un terminador nulo al final de la cadena concatenada y le devuelve un puntero. Por ejemplo, si se llama a la función con las cadenas "abc" y "def", creará una nueva cadena "abcdef" y le devolverá un puntero. Nota: La función llama a la función ft_strlen, que calcula la longitud de una cadena terminada en nulo.| Un puntero a una cadena terminada en cero (`char const *s1`), que es la primera cadena que se concatena | Un puntero a una cadena terminada en nulo (`char const *s2`), que es la segunda cadena que se concatena. | Un puntero a una nueva cadena que es el resultado de la concatenación de s1 y s2
+
+
+
 
 
 
