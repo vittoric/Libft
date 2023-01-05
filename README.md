@@ -261,6 +261,16 @@ Ubiqua la subcadena, donde no se buscan más de los caracteres 'len'. Busca la p
 
 
 
+## [ft_substr](/ft_substr.c)
+
+`char  	*ft_substr(char const *s, unsigned int start, size_t len)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+La función primero verifica si la cadena de entrada es NULL. Si es así, devuelve NULL. A continuación, comprueba si el índice de inicio es mayor que la longitud de la cadena original. Si es así, establece la longitud de la subcadena en 0. Luego, verifica si la longitud de la subcadena es mayor que la longitud de la cadena original. Si es así, establece la longitud de la subcadena en la longitud de la cadena original. Luego, la función asigna memoria para la subcadena usando malloc e inicializa una variable size_t (i) a 0. Luego ingresa a un ciclo que copia los caracteres de la cadena original a la subcadena, comenzando en el índice de inicio y siguiendo un número de iteraciones igual a la longitud de la subcadena. Una vez que finaliza el ciclo, la función agrega un terminador nulo al final de la subcadena y devuelve un puntero a la subcadena. Por ejemplo, si se llama a la función con la cadena "abcdefg", el índice de inicio 2 y la longitud 3, extraerá la subcadena "cde" de la cadena original y le devolverá un puntero.| Un puntero a una cadena terminada en nulo (`char const *s`), que es la cadena original de la que se extraerá la subcadena. | el índice del primer carácter a incluir en la subcadena| la longitud de la subcadena | Un puntero a una nueva cadena
+
+
+
 
 
 
