@@ -251,6 +251,26 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 Ubiqua la subcadena, donde no se buscan más de los caracteres 'len'. Busca la primera aparición de la subcadena 'needle' en la cadena 'haystack'. Los bytes nulos finales ('\0') no se comparan.| La cadena a buscar | La cadena que se buscará en la cadena 'haystack'| La cantidad máxima de caracteres a buscar | Un puntero a la primera aparición de subcadena 'needle' en el 'haystack'. NULL si no se encuentra la subcadena. Si 'needle' es una cadena vacía, se devuelve 'haystack'
 
 
+## [ft_atoi](/ft_atoi.c)
+
+`int	   ft_atoi(const char *str)`
+
+Description | Param. #1 | 
+:-----------: | :-----------: | 
+Esta es una función de C que convierte una representación de cadena de un número entero en un valor entero.
+
+La función toma un solo argumento, un puntero a una cadena terminada en nulo (const char *str). La función procesa la cadena de izquierda a derecha y devuelve el valor entero representado por la cadena.
+
+La función primero inicializa el resultado (res) en 0 y el signo (signo) en 1. Luego omite cualquier carácter de espacio en blanco inicial (espacios, tabuladores, líneas nuevas, etc.) en la cadena mediante un ciclo while que continúa mientras el carácter actual (señalado por str) es un espacio o un carácter no imprimible (valores ASCII de 9 a 13).
+
+A continuación, la función comprueba el primer carácter que no sea un espacio en blanco. Si es un signo menos ('-'), el signo se establece en -1. Si es un signo más ('+'), el signo se deja como 1. Si no es ni un signo más ni un signo menos, el signo permanece 1.
+
+Finalmente, la función ingresa a un ciclo que procesa los caracteres restantes en la cadena hasta que encuentra un carácter que no es un dígito (0 a 9). Para cada dígito, la función multiplica el resultado actual por 10 y suma el valor del dígito. Cuando finaliza el bucle, la función devuelve el resultado multiplicado por el signo.
+
+Por ejemplo, si se llama a la función con la cadena "-12345", omitirá los caracteres de espacio en blanco iniciales, establecerá el signo en -1 y procesará los dígitos 1, 2, 3, 4 y 5, lo que dará como resultado un resultado final. valor de retorno de -12345.| Esta es la cadena que estamos convirtiendo en un número entero.
+
+
+
 
 
 
